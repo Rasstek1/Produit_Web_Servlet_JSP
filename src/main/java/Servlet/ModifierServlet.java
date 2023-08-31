@@ -1,5 +1,16 @@
 package Servlet;
 
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import model.Produit;
+import repository.ProduitDataContext;
+
+import java.io.IOException;
+
+
 public class ModifierServlet extends HttpServlet {
     private  MyDataContext dc=new MyDataContext();
 

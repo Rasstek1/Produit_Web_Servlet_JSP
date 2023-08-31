@@ -1,5 +1,15 @@
 package Servlet;
 
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import model.Produit;
+import repository.ProduitDataContext;
+
+import java.io.IOException;
+
 public class SupprimerServlet extends HttpServlet {
     private  ProduitDataContext dc=new ProduitDataContext();
 
